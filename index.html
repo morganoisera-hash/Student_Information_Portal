@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Student Information Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Masinde Muliro University of Agriculture and Technology</h1>
+        <p>Student Information Portal</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#registration">Student Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Our Portal</h2>
+        <p>The Student Information Portal is designed to help students easily access their academic records, view available programmes, and manage their university registration details all in one convenient place.</p>
+        
+        <h3>Academic Programmes</h3>
+        <ul>
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Bachelor of Business Information Technology</li>
+            <li>Bachelor of Science in Information Technology</li>
+            <li>Bachelor of Science in Software Engineering</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Student Records</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Registration Number</th>
+                    <th>Programme</th>
+                    <th>Year of Study</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Morgan Ndemo</td>
+                    <td>SCS/0001/2024</td>
+                    <td>Computer Science</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Amina Otieno</td>
+                    <td>BIT/0023/2024</td>
+                    <td>BBIT</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Brian Kipkorir</td>
+                    <td>SIT/0045/2024</td>
+                    <td>Information Technology</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="registration">
+        <h2 class="section-title">Student Registration Form</h2>
+        <form id="regForm">
+            <div>
+                <label>Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Registration Number:</label><br>
+                <input type="text" name="regno" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+            <br>
+
+            <div>
+                <label>Academic Programme:</label><br>
+                <select name="programme">
+                    <option value="">--Select Programme--</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="bbit">BBIT</option>
+                    <option value="it">Information Technology</option>
+                    <option value="se">Software Engineering</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+
+        <div id="successMessage" style="margin-top: 15px; font-weight: bold;"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
